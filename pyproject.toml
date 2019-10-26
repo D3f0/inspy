@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "inspy"
+version = "0.1"
+description = ""
+authors = ["Nahuel <nahuel.defosse@gmail.com>"]
+license = "MIT"
+
+
+
+[tool.poetry.dependencies]
+python = "^3.6"
+appdirs = "^1.4"
+bullet = "^2.1"
+munch = "^2.3.2"
+sh = "^1.12.14"
+loguru = "^0.3.2"
+
+
+[tool.poetry.dev-dependencies]
+pdbpp = "^0.10.0"
+snoop = "^0.2.2"
+hunter = "^3.0"
+bpython = "^0.18.0"
+pytest = "^5.1"
+ipython = "^7.8"
+flake8 = "^3.7"
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+pytest-coverage = "^0.0.0"
+pytest-cov = "^2.7"
+mypy = "^0.720.0"
+pytest-html = "^2.0"
+pytest-mock = "^1.10"
+Sphinx = "^2.2.0"
+doc8 = "^0.8.0"
+
+[tool.poetry.scripts]
+inspy = "inspy.cli:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
